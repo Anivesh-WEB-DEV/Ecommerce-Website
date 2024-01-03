@@ -6,7 +6,6 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  /* background-color: rgb(247,32,122); */
   height: 90px;
   width: 100%;
 }
@@ -17,10 +16,7 @@
 }
 
 
-.css-i4bv87-MuiSvgIcon-root{
-  width: 113px !important;
-  height: 47px !important;
-}
+
 .heading {
     font-size:40px;
     margin: 0px 0px 18px 257px;
@@ -31,13 +27,16 @@
   display: flex;
   
 }
-.css-1to51ap-MuiBadge-root .MuiBadge-badge{
-right: 29px !important;
-top: 2px !important;
-border: 1.7px solid white !important;
-padding: 2px 5px !important;
+
+/* .css-1to51ap-MuiBadge-root .MuiBadge-badge{
+right: 29px ;
+top: 2px ;
+border: 1.7px solid white ;
+padding: 2px 5px ;
 display: block;
-}
+} */
+
+
 .hr_line{
   width: 100%;
   height: 3px;

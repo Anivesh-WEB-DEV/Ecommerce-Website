@@ -45,16 +45,25 @@ const Navbar = () => {
         <div class="login_menu">
           {!isLoginPage ? (
             <div className="login">
-              <Link to="/login"> Login</Link>
+              <Link to="/login" className="login-txt"> Login</Link>
 
               <div className="cart_logo">
                 <Link to="/cart">
-                  <StyledBadge
+                <StyledBadge
                     badgeContent={cart.cartTotalQuantity}
-                    color="secondary"
+                    color="success"
                     className="cart1"
+                    sx={{
+                      '& .MuiBadge-badge':{
+                        right: '37px',
+                        top: '6px',
+                        border: '1.7px solid white'
+                        ,padding: '2px 5px',
+                        display: 'block'
+                      }
+                    }}
                   >
-                    <ShoppingCartIcon className="cart2" />
+                    <ShoppingCartIcon className="cart2"  sx={{ width: "113px" , height: '47px' }}/>
                   </StyledBadge>
                 </Link>
               </div>
