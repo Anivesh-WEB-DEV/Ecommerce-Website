@@ -4,7 +4,7 @@
 .cart-container h2 {
   font-weight: 400;
   font-size: 30px;
-  /* text-align: center; */
+  text-align: center;
 }
 .cart-container .titles {
   margin: 2rem 0 1rem 0;
