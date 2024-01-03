@@ -1,0 +1,45 @@
+.container_w{
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.navbar{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background-color: rgb(247,32,122); */
+  height: 90px;
+  width: 100%;
+}
+
+.logo {
+  width: 191px;
+    height: 68px;
+}
+
+
+.css-i4bv87-MuiSvgIcon-root{
+  width: 113px !important;
+  height: 47px !important;
+}
+.heading {
+    font-size:40px;
+    margin: 0px 0px 18px 257px;
+}
+.login{
+  font-size: 23px;
+  color: black;
+  display: flex;
+  
+}
+.css-1to51ap-MuiBadge-root .MuiBadge-badge{
+right: 29px !important;
+top: 2px !important;
+border: 1.7px solid white !important;
+padding: 2px 5px !important;
+display: block;
+}
+.hr_line{
+  width: 100%;
+  height: 3px;
+  background-color: gray;
+}
