@@ -28,17 +28,55 @@
   
 }
 
-/* .css-1to51ap-MuiBadge-root .MuiBadge-badge{
-right: 29px ;
-top: 2px ;
-border: 1.7px solid white ;
-padding: 2px 5px ;
-display: block;
-} */
 
 
 .hr_line{
   width: 100%;
   height: 3px;
   background-color: gray;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 1200px) {
+  .logo {
+    width: 80px; /* Adjusted width for screens between 1200px and 991px */
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .heading {
+    font-size: 20px; /* Adjusted font size for screens between 991px and 768px */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 18px; /* Adjusted font size for screens between 768px and 576px */
+  }
+
+  .login {
+    font-size: 16px; /* Adjusted font size for screens between 768px and 576px */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    width: 60px;
+    height: 60px; /* Adjusted width for screens below 576px */
+  }
+
+  .heading {
+    font-size: 16px; /* Adjusted font size for screens below 576px */
+  }
+
+  .login {
+    font-size: 14px; /* Adjusted font size for screens below 576px */
+  }
 }
