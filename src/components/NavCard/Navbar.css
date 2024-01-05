@@ -35,6 +35,11 @@
   height: 3px;
   background-color: gray;
 }
+.login_menu{
+  display: flex;
+  justify-content: space-between;
+  width: 18%;
+}
 
 /* Media Queries for Responsive Design */
 

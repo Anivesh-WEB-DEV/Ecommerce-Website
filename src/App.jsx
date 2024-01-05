@@ -36,7 +36,7 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/NavCard/Navbar";
 import { ToastContainer } from "react-toastify";
 import cardDetails from "./components/NavCard/cardDetails";
-import Login from "./components/LoginSignup/Login";
+// import Login from "./components/LoginSignup/Login";
 import ErrorBoundary from './components/NavCard/ErrorBoundary '
 
 const App = () => {
@@ -49,7 +49,7 @@ const App = () => {
          <ToastContainer />
         <Routes>
           <Route path="/" Component={Home} />
-          <Route path="/login" Component={Login} />
+          {/* <Route path="/login" Component={Login} /> */}
           <Route path="/card" Component={cardDetails} />
           <Route path="/cart" Component={Cart} />
         </Routes>
