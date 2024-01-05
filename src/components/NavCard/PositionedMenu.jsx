@@ -5,7 +5,7 @@ import MenuItem from "@mui/material/MenuItem";
 import { useAuth0 } from "@auth0/auth0-react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
-import UserLogo from "./assets/user.png";
+import UserLogo from "../../assets/user.png";
 import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function PositionedMenu() {
