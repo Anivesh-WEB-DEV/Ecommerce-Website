@@ -1,86 +1,69 @@
-.container_w{
+.container_w {
   max-width: 1160px;
   margin: 0 auto;
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 90px;
   width: 100%;
 }
-
 .logo {
   width: 179px;
   height: 68px;
 }
-
-
 .heading {
-    font-size:40px;
-    margin: 0px 0px 18px 257px;
+  font-size: 40px;
+  margin: 0px 0px 18px 257px;
 }
-.login{
+.login {
   font-size: 23px;
   color: black;
   display: flex;
-  
 }
-
-
-
-.hr_line{
+.hr_line {
   width: 100%;
   height: 3px;
   background-color: gray;
 }
-.login_menu{
+.login_menu {
   display: flex;
   justify-content: space-between;
   width: 18%;
 }
-
-/* Media Queries for Responsive Design */
-
 @media screen and (max-width: 1200px) {
   .logo {
-    width: 80px; /* Adjusted width for screens between 1200px and 991px */
+    width: 80px;
   }
 }
-
 @media screen and (max-width: 991px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
   }
-
   .heading {
-    font-size: 20px; /* Adjusted font size for screens between 991px and 768px */
+    font-size: 20px;
   }
 }
-
 @media screen and (max-width: 768px) {
   .heading {
-    font-size: 18px; /* Adjusted font size for screens between 768px and 576px */
+    font-size: 18px;
   }
-
   .login {
-    font-size: 16px; /* Adjusted font size for screens between 768px and 576px */
+    font-size: 16px;
   }
 }
-
 @media screen and (max-width: 576px) {
   .logo {
     width: 60px;
-    height: 60px; /* Adjusted width for screens below 576px */
+    height: 60px;
   }
-
   .heading {
-    font-size: 16px; /* Adjusted font size for screens below 576px */
+    font-size: 16px;
   }
-
   .login {
-    font-size: 14px; /* Adjusted font size for screens below 576px */
+    font-size: 14px;
   }
 }

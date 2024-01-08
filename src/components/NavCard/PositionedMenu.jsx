@@ -6,12 +6,10 @@ import { useAuth0 } from "@auth0/auth0-react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import UserLogo from "../../assets/user.png";
-import LogoutIcon from '@mui/icons-material/Logout';
-
+import LogoutIcon from "@mui/icons-material/Logout";
 export default function PositionedMenu() {
   const [anchorEl, setAnchorEl] = useState(null);
   const { loginWithRedirect, logout, isAuthenticated, user } = useAuth0();
-
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -19,7 +17,6 @@ export default function PositionedMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   return (
     <div>
       <Button
@@ -68,18 +65,21 @@ export default function PositionedMenu() {
         }}
       >
         {user && <h3 className="ps-1">{user.name}</h3>}
-
         {user && <h3 className="ps-1 pe-1">{user.email}</h3>}
-
         <MenuItem onClick={handleClose} className="text-center">
           {isAuthenticated ? (
             <button
               onClick={() =>
                 logout({ logoutParams: { returnTo: window.location.origin } })
               }
-              style={{ paddingLeft: "5px", paddingRight: "10px" , fontSize:"21px", paddingTop:"4px" }}
+              style={{
+                paddingLeft: "5px",
+                paddingRight: "10px",
+                fontSize: "21px",
+                paddingTop: "4px",
+              }}
             >
-              Log Out <LogoutIcon sx={{color:"black", marginLeft:"16px"}}/>
+              Log Out <LogoutIcon sx={{ color: "black", marginLeft: "16px" }} />
             </button>
           ) : (
             <button

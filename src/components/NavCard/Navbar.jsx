@@ -2,18 +2,12 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-// import logo from "../../assets/log-removebg-preview.png";
 import logo from "../../assets/log-removebg-preview.png";
 import Badge from "@mui/material/Badge";
 import { styled as styledMaterial } from "@mui/material/styles";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { getTotal } from "../Redux/cartSlice";
-import { useAuth0 } from "@auth0/auth0-react";
 import PositionedMenu from "./PositionedMenu";
-// import { Fragment } from 'react'
-// import { Menu, Transition } from '@headlessui/react'
-// import { ChevronDownIcon } from '@heroicons/react/20/solid'
-
 const StyledBadge = styledMaterial(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
     right: -3,
@@ -25,8 +19,6 @@ const StyledBadge = styledMaterial(Badge)(({ theme }) => ({
 const Navbar = () => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
-  const { isAuthenticated } = useAuth0();
-
   useEffect(() => {
     dispatch(getTotal());
   }, [cart, dispatch]);
@@ -48,8 +40,7 @@ const Navbar = () => {
         </div>
         <div className="login_menu ">
           <div>
-          <PositionedMenu />
-          
+            <PositionedMenu />
           </div>
           <div className="cart_logo">
             <Link to="/cart">
@@ -80,5 +71,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;
