@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./Navbar.css";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+// import logo from "../../assets/log-removebg-preview.png";
 import logo from "../../assets/log-removebg-preview.png";
 import Badge from "@mui/material/Badge";
 import { styled as styledMaterial } from "@mui/material/styles";
