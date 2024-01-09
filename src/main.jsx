@@ -1,11 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
+// import App from "./App.jsx";
 import "./index.css";
 import store from "./components/Redux/store.js";
 import { Provider } from "react-redux";
 import { Auth0Provider } from "@auth0/auth0-react";
-// import Tests from './Test/Tests.jsx'
+import Tests from './Test/Tests.jsx'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Auth0Provider
@@ -16,8 +16,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     }}
   >
     <Provider store={store}>
-      {/* <Tests/> */}
-      <App />
+      <Tests/>
+      {/* <App /> */}
     </Provider>
   </Auth0Provider>
 );

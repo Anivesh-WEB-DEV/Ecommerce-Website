@@ -35,10 +35,8 @@ import Home from "./components/Home/Home";
 import Navbar from "./components/NavCard/Navbar";
 import { ToastContainer } from "react-toastify";
 import cardDetails from "./components/NavCard/cardDetails";
-import ErrorBoundary from "./components/NavCard/ErrorBoundary ";
 const App = () => {
   return (
-    <ErrorBoundary>
       <div className="App">
         <BrowserRouter>
           <Navbar />
@@ -51,7 +49,6 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       </div>
-    </ErrorBoundary>
   );
 };
 export default App;
