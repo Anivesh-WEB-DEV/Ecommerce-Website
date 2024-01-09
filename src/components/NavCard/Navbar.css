@@ -16,6 +16,7 @@
 .heading {
   font-size: 40px;
   margin: 0px 0px 18px 257px;
+  color: #f7207a;
 }
 .login {
   font-size: 23px;
@@ -24,7 +25,7 @@
 }
 .hr_line {
   width: 100%;
-  height: 3px;
+  height: 4px;
   background-color: gray;
 }
 .login_menu {

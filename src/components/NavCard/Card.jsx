@@ -157,7 +157,7 @@ const Cards = () => {
     return (
       <div className="outer_card">
         <div className="card_box">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((placeholder, index) => (
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11,12].map((placeholder, index) => (
             <Card key={index} sx={{ maxWidth: 345 }} className="card">
               <CardActionArea>
                 <Skeleton variant="rectangular" height={295} />
